@@ -1,0 +1,40 @@
+{
+  "name": "sicpjs",
+  "version": "1.0.0",
+  "description": "sicp on js",
+  "main": "index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "jest",
+    "build": "NODE_ENV=production babel src --out-dir dist --source-maps inline",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deputatov/sicpjs.git"
+  },
+  "keywords": [
+    "sicp",
+    "js"
+  ],
+  "author": "Nikita Deputatov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/deputatov/sicpjs/issues"
+  },
+  "homepage": "https://github.com/deputatov/sicpjs#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.6.0",
+    "@babel/core": "^7.6.0",
+    "@babel/node": "^7.6.1",
+    "@babel/preset-env": "^7.6.0",
+    "babel-eslint": "^10.0.3",
+    "babel-jest": "^24.9.0",
+    "eslint": "^6.4.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "jest": "^24.9.0"
+  }
+}
